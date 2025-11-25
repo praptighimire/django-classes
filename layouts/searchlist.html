@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>searchlist</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      border: 2px solid black;
+      padding: 20px;
+    }
+
+    .search-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .search-box {
+      display: flex;
+      border: 2px solid black;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 60%;
+    }
+    .search-box input {
+      border: none;
+      padding: 12px 15px;
+      flex: 1;
+      font-size: 18px;
+      outline: none;
+    }
+
+    .search-box button {
+      border: none;
+      border-left: 2px solid black;
+      padding: 10px 15px;
+      font-size: 18px;
+      background: white;
+      cursor: pointer;
+    }
+
+    .item {
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+
+.item-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .read-btn {
+      border: 2px solid black;
+      border-radius: 15px;
+      padding: 8px 18px;
+      background: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="search-wrapper">
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <button>🔍</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-title">Title</div>
+      <div class="item-row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ...</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-title">Title</div>
+      <div class="item-row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ...</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-title">Title</div>
+      <div class="item-row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ...</p>
+        <button class="read-btn">Read More</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

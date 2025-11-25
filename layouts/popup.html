@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            border: 2px solid black;
+            height: 100vh;
+            padding-top: 80px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .pop {
+            width: 70%;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 30px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            background: white;
+            border: 2px solid black;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+
+        .pop p {
+            max-width: 90%;
+            font-size: 20px;
+            line-height: 1.6;
+            margin-top: 40px;
+        }
+
+
+        .confirm-btn {
+            display: block;
+            margin: 40px auto 0 auto;
+            width: 150px;
+            height: 45px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pop">
+            <button class="close-btn">×</button>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odio eum sequi ex perspiciatis accusantium necessitatibus molestias ullam accusamus fuga hic, unde sit aliquid mollitia possimus iste? Distinctio, possimus magni?
+            </p>
+            <button class="confirm-btn">Confirm</button>
+        </div>
+    </div>
+</body>
+</html>

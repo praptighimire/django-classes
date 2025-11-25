@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonial</title>
+<style>
+  body {
+    margin: 0;
+  }
+  .page {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 100vh;
+  }
+  .desktop-layout, .mobile-layout {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .desktop-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+.top-bar {
+    height: 40px;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+  .big-image, .box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+.text {
+    display: flex;
+    justify-content:  flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  .testimonials-row {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .mobile-layout .big-image {
+    display: block;
+    margin: 0 auto;
+}
+
+  .scroll-testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height:  350px;
+    overflow-y: auto;
+    align-items: center;
+    padding-right: 10px;
+  }
+
+  .scroll-testimonials::-webkit-scrollbar { width: 8px; }
+  .scroll-testimonials::-webkit-scrollbar-track {
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .scroll-testimonials::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .scroll-testimonials .box {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="desktop-layout">
+    <div class="top-bar"></div>
+    <div class="content-grid">
+      <div class="big-image"></div>
+      <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <h3>Testimonials</h3>
+    <div class="testimonials-row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+  <div class="mobile-layout">
+    <div class="big-image"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h3>Testimonials</h3>
+    <div class="scroll-testimonials">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
