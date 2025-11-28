@@ -1,0 +1,208 @@
+ body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: white;
+        color: #0f1419;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 120px 1fr 350px;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /*left bar*/
+    .icon-sidebar {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 40px;
+    }
+    .icon-btn {
+        width: 60px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: 0.2s;
+    }
+    .icon-btn:hover { 
+        background: #e6f3ff; 
+    }
+    .icon-btn svg { 
+        width: 30px; 
+        height: 30px; }
+
+    /* middle area */
+    .feed-area {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid #e6e6e6;
+        overflow-y: auto;
+        background: white;
+    }
+
+    .feed-header {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 15px;
+        border-bottom: 1px solid #e6e6e6;
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 10;
+    }
+    .feed-header button {
+        background: none;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 8px;
+        cursor: pointer;
+    }
+    .active {
+        border-bottom: 3px solid #1d9bf0;
+        color: #1d9bf0;
+    }
+
+    /* tweets area */
+    .tweet-box {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .tweet-box-flex {
+        display: flex;
+        gap: 10px;
+    }
+    .pfp {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        object-fit: cover;
+        background: #ddd;
+    }
+    .tweet-input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        resize: none;
+        background: transparent;
+    }
+
+    .tweet-toolbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .toolbar-icons {
+        display: flex;
+        gap: 15px;
+    }
+    .icon-small {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #e3e3e3;
+    }
+
+    .post-btn {
+        padding:  6px 18px;
+        background: #1d9bf0;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .tweet-card {
+        display: flex;
+        gap: 15px;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .tweet-body { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 6px; 
+    }
+    .tweet-user { 
+        font-weight: bold; 
+        font-size: 16px; 
+    }
+    .tweet-content { 
+        font-size: 15px; 
+    }
+
+    /* right bar */
+    .rightbar {
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: #fafafa;
+        overflow-y: auto;
+    }
+    .search-box input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        background: #f0f2f3;
+    }
+    .box {
+        background: white;
+        border: 1px solid #e6e6e6;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .box h3 { 
+        margin: 0 0 10px 0; 
+    }
+
+    .trend-item,
+    .follow-item {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+    }
+    .trend-item:last-child,
+    .follow-item:last-child { border-bottom: none; }
+
+    .follow-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .follow-pfp {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #b5b5b5;
+        margin-right: 10px;
+    }
+    .follow-btn {
+        padding: 6px 14px;
+        background: #1d9bf0;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .see-more {
+        color: #1d9bf0;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 14px;
+    }
